@@ -33,6 +33,19 @@ const jobSchema = new mongoose.Schema({
     //Tracking Timeline
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
+
+    // Soft delete
+    isArchived: { type: Boolean, default: false },
+
+    //Follow-up
+    followUp: {
+        enabled: { type: Boolean, default: true },
+        lastFollowUpSent: { type: Date },
+    },
 }, { timestamps: true });
+
+// Indexes
+jobSchema.index({ user: 1, stage: 1 });
+jobSchema.index({ companyName: 1 });
 
 export default mongoose.model('Job', jobSchema);

@@ -4,6 +4,8 @@ import ConnectToDB from "./config/db.js";
 import UserRoutes from "./routes/userRoute.js";
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
+import './jobs/followUpJob.js';
+
 
 const swaggerOptions = {
     definition: {
@@ -22,7 +24,6 @@ const swaggerOptions = {
             },
         ],
     },
-    // Path to the API docs (where you will write your documentation)
     apis: ['./src/routes/*.js'],
 };
 

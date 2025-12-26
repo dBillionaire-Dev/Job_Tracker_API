@@ -26,4 +26,7 @@ const timelineSchema = new mongoose.Schema({
 }, { timestamps: true }
 );
 
+// Index
+timelineSchema.index({ jobId: 1, interviewDate: 1 });
+
 export default mongoose.model("Timeline", timelineSchema);
