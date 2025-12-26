@@ -19,6 +19,8 @@ const env = {
     JWT_SECRET: required('JWT_SECRET'),
     JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '1d',
 
+    API_KEY: required('API_KEY'),
+
 };
 
 export default env;
