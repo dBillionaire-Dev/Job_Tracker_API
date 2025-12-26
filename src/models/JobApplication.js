@@ -8,7 +8,8 @@ const jobSchema = new mongoose.Schema({
     role: { type: String, required: true },
     link: String,
     locationType: { type: String, enum: ['Remote', 'Hybrid', 'In-Person (On-site)'] },
-    applicationScore: { type: Number, min: 1, max: 5 }, // 5 = dream job
+    interestScore: { type: Number, min: 1, max: 5 }, // 5 = dream job
+    applicationScore: { type: Number, min: 1, max: 5 }, // 5 = very good application submitted
     notes: String, // For "Actionable items"
 
     // Application Tracking
@@ -21,16 +22,17 @@ const jobSchema = new mongoose.Schema({
     expiryDate: { type: Date, default: Date.now },
 
     // Strategic Analysis Features
-    salary: {
+    compensation: {
         base: Number,
         bonus: Number,
-        currency: { type: String, default: 'USD' }
+        currency: { type: String, default: 'USD' },
+        benefits: { type: String, default: "HMO" },
+        notes: { type: String, default: "Needing visa sponsorship" },
     },
-    contacts: [{
-        name: String,
-        role: String,
-        email: String
-    }],
+
+    //Tracking Timeline
+    createdAt: { type: Date, default: Date.now },
+    updatedAt: { type: Date, default: Date.now },
 }, { timestamps: true });
 
 export default mongoose.model('Job', jobSchema);
