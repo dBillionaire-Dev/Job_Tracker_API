@@ -21,17 +21,18 @@ This API is designed for developers, job seekers, and portfolio reviewers. It de
 
 ## 🔍 Table of Contents
 
-1. [Features](#features)  
-2. [Getting Started](#getting-started)  
-3. [Environment Variables](#environment-variables)  
-4. [API Endpoints](#api-endpoints)  
-5. [Filtering & Pagination](#filtering-and-pagination)  
-6. [Analytics](#analytics)  
-7. [Role-Based Access](#role-based-access)  
-8. [Swagger Documentation](#swagger-documentation)  
-9. [Project Structure](#project-structure)  
-10. [Next Improvements](#next-improvements)  
-11. [License](#license)
+1. [Features](#features)
+2. [Preview](#preview)  
+3. [Getting Started](#getting-started)  
+4. [Environment Variables](#environment-variables)  
+5. [API Endpoints](#api-endpoints)  
+6. [Filtering & Pagination](#filtering-and-pagination)  
+7. [Analytics](#analytics)  
+8. [Role-Based Access](#role-based-access)  
+9. [Swagger Documentation](#swagger-documentation)  
+10. [Project Structure](#project-structure)  
+11. [Next Improvements](#next-improvements)  
+12. [License](#license)
 
 ---
 
@@ -46,6 +47,10 @@ This API is designed for developers, job seekers, and portfolio reviewers. It de
 ✔ Email follow-up scheduling support  
 ✔ Pagination, validation, and error handling  
 ✔ Modular architecture with clear separation of concerns
+
+---
+## 🖼️ Preview
+<img width="1822" height="918" alt="Job Tracker" src="https://github.com/user-attachments/assets/569d91e6-bc21-45da-89e1-354ddbddd8b9" />
 
 ---
 
