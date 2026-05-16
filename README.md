@@ -236,7 +236,7 @@ job-tracker-backend/
 
 ## 🚧 Next Improvements
 
-✨ Add automated tests with Jest or Supertest
+✨ Add automated tests with Jest/Supertest
 ✨ Implement **Swagger examples** for every endpoint
 ✨ E2E tests & CI/CD pipeline
 ✨ OAuth2 (Google / GitHub login)
