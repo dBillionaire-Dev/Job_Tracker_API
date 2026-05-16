@@ -1,4 +1,4 @@
-# Job Tracker API — A Professional RESTful Backend Service
+# Job Tracker API: A Professional RESTful Backend Service
 
 **Job Tracker API** is a robust backend service built with **Node.js**, **Express**, and **MongoDB** for tracking job applications, interviews, stages, analytics, and timelines, all with authentication, filtering, role-based access, and advanced metrics.
 
